@@ -5,7 +5,7 @@ from math import ceil
 
 class Luban(object):
     
-    def __init__(self, ignoreBy=100, quality=60):
+    def __init__(self, ignoreBy=102400, quality=60):
         self.ignoreBy = ignoreBy
         self.quality = quality
     
@@ -62,12 +62,12 @@ class Luban(object):
             return ceil(longSide / (1280.0 / scale))
     
     def compress(self):
+        self.setTargetDir()
         # 先调整大小，再调整品质
         if os.path.getsize(self.path) <= self.ignoreBy:
-            copyfile(path, self.targetPath)
+            copyfile(self.path, self.targetPath)
             
         else:
-            self.setTargetDir()
             self.load()
             
             scale = self.computeScale()
