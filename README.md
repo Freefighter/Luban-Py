@@ -1,6 +1,6 @@
 # Luban-Py
 
-[Luban](https://github.com/Curzibn/Luban/) is an image compressing tool for android with efficacy very close to that of `WeChat` Moments. This project [Luban-Py] ports its algorithm to Python and offers an executable program for Windows.
+[Luban](https://github.com/Curzibn/Luban/) is an image compressing tool for android with efficacy very close to that of `WeChat` Moments. This project [Luban-Py](https://github.com/Freefighter/Luban-Py) ports its algorithm to Python and offers an executable program for Windows.
 
 # Description for [Luban](https://github.com/Curzibn/Luban/)
 
@@ -12,7 +12,7 @@ Naturally, the first idea was to see how the `WeChat`, the app giant manages thi
 
 Because the process was analyzed backwards, `Luban`'s efficacy is not yet exactly the same as that of `WeChat`, but the results are already very close to what `WeChat` Moments' image compression produces.
 
-Translation partly by: [_Szabolcs Pasztor_](https://github.com/spqpad)
+Translation by: [_Szabolcs Pasztor_](https://github.com/spqpad)
 
 # Usage
 
