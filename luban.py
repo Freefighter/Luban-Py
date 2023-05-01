@@ -29,7 +29,7 @@ class Luban(object):
         elif self.img.mode == "RGBA": 
             self.type = "PNG"
         else: # 其他的图片就转成JPEG
-            self.img == img.convert("RGB")
+            self.img == Image.convert("RGB")
             self.type = "JPEG"
     
     def computeScale(self):
