@@ -29,7 +29,7 @@ class Luban(object):
         elif self.img.mode == "RGBA": 
             self.type = "PNG"
         else: # 其他的图片就转成JPEG
-            self.img == img.convert("RGB")
+            self.img = self.img.convert("RGB")
             self.type = "JPEG"
     
     def computeScale(self):
@@ -78,7 +78,7 @@ class Luban(object):
             cache.save(self.targetPath, self.type, quality=self.quality)
             
 if __name__ == '__main__':
-    path = r"C:\Users\William Chen\Documents\GitHub\Luban-Py\test.jpg"
+    path = r"C:\Users\William\Documents\GitHub\Luban-Py\example_lena.png"
     
     compressor = Luban()
     compressor.setPath(path)
